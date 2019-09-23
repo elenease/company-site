@@ -1,0 +1,9 @@
+.idea
+*.ai
+*.log
+*.sublime*
+node_modules/
+unnecessary/
+archives/
+npm-debug.*
+Thumbs.db

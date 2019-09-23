@@ -1,0 +1,766 @@
+/* ШРИФТЫ */
+
+/* cyrillic-ext */
+@font-face
+{
+    font-family: 'Ubuntu Condensed';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(../font/ubuntu/ubuntu-1.woff2) format('woff2');
+    font-display: swap;
+}
+
+/* cyrillic */
+@font-face
+{
+    font-family: 'Ubuntu Condensed';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(../font/ubuntu/ubuntu-2.woff2) format('woff2');
+    font-display: swap;
+}
+
+/* greek-ext */
+/*@font-face {
+  font-family: 'Ubuntu Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(../font/ubuntu/ubuntu-3.woff2) format('woff2');
+}*/
+
+/* greek */
+/*@font-face {
+  font-family: 'Ubuntu Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(../font/ubuntu/ubuntu-4.woff2) format('woff2');
+}*/
+
+/* latin-ext */
+@font-face
+{
+    font-family: 'Ubuntu Condensed';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(../font/ubuntu/ubuntu-5.woff2) format('woff2');
+    font-display: swap;
+}
+
+/* latin */
+@font-face
+{
+    font-family: 'Ubuntu Condensed';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(../font/ubuntu/ubuntu-6.woff2) format('woff2');
+    font-display: swap;
+}
+
+/* latin-ext */
+@font-face
+{
+    font-family: 'Unica One';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Unica One'), local('UnicaOne-Regular'), url(../font/unica-one/unica-one-regular-ext.woff2) format('woff2');
+    font-display: swap;
+}
+
+/* latin */
+@font-face
+{
+    font-family: 'Unica One';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Unica One'), local('UnicaOne-Regular'), url(../font/unica-one/unica-one-regular.woff2) format('woff2');
+    font-display: swap;
+}
+
+/* ОБЩИЕ СТИЛИ */
+
+html
+{
+    position: relative;
+
+    min-height: 100%;
+}
+
+body
+{
+    background-color: white;
+}
+
+/*main {
+  min-height: 100vh;
+}*/
+
+.visually-hidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+}
+
+/* Для подчёркивания под заголовками */
+.decor-underline
+{
+    width: 10%;
+    height: 3px;
+
+    background-color: red;
+}
+
+
+/* ШАПКА САЙТА */
+
+.navbar-dark .navbar-brand,
+.footer .navbar-brand
+{
+    font-family: 'Unica One', 'Arial', cursive;
+
+    padding: 0;
+
+    color: #d32f2f;
+}
+
+.navbar-brand__wrap
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.navbar-brand .navbar-brand__left
+{
+    font-weight: 900;
+    line-height: 27px;
+
+    margin-top: 7px;
+    margin-right: 4px;
+
+    border-top: 3px solid #d32f2f;
+    border-bottom: 3px solid #d32f2f;
+}
+
+.navbar-brand .navbar-brand__right
+{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 48px;
+}
+
+.navbar-brand__slogan
+{
+    font-size: 1.3rem;
+    font-weight: 300 !important;
+}
+
+.navbar-dark .navbar-brand:hover,
+.footer .navbar-brand:hover
+{
+    color: #d33e3e;
+}
+
+.navbar-brand img
+{
+    width: 150px;
+}
+
+.navbar-phone
+{
+    margin-left: 1rem;
+}
+
+.nav-link
+{
+    /*font-weight: bold;*/
+    font-size: 1.3rem;
+}
+
+.navbar-phone a
+{
+    /*color: #92D050;*/
+    color: #d0d1d3;
+}
+
+@media (min-width: 768px)
+{
+    .navbar-expand-md .navbar-nav
+    {
+        -ms-flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+/* ЗАГОЛОВОК СТРАНИЦЫ */
+
+.page-heading .heading__text
+{
+    /* font-size: 66px; */
+    font-weight: 800;
+
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px)
+{
+    .page-heading .heading__text
+    {
+        font-size: 54px;
+
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .page-heading .heading__text
+    {
+        font-size: 66px;
+        font-weight: 800;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .heading__description
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .heading__description
+    {
+        font-size: 20px;
+
+        margin: 0;
+        padding-right: 15px;
+
+        border-right: 5px solid red;
+    }
+}
+
+@media (min-width: 500px)
+{
+    .page-heading .heading__text
+    {
+        font-family: 'Ubuntu Condensed', 'Arial', sans-serif;
+    }
+}
+
+
+/* ГЛАВНАЯ: Карусель */
+
+.carousel-item h3
+{
+    margin-bottom: 30px;
+}
+
+.carousel-item__code
+{
+    background-color: #3e4d50;
+}
+
+@media (min-width: 300px)
+{
+    .carousel .carousel-control-next-icon,
+    .carousel .carousel-control-prev-icon
+    {
+        background-size: 250%;
+    }
+}
+
+.carousel-item__sharp
+{
+    font-family: 'Ubuntu Condensed', 'Arial', sans-serif;
+    font-weight: 600;
+
+    color: #f44336;
+}
+
+.carousel-item__text
+{
+    margin-bottom: 30px;
+}
+
+/* Для маски карусели, если нужно будет */
+
+/*.carousel-mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 10; 
+}
+
+.carousel-caption {
+  position: relative;
+}
+
+
+/* ГЛАВНАЯ: Преимущества */
+
+.advantages h2
+{
+    font-weight: 500;
+}
+
+
+/* ГЛАВНАЯ: Готовые проекты */
+
+.cards__title
+{
+    font-weight: 500;
+
+    position: relative;
+}
+
+.card-image
+{
+    position: relative;
+}
+
+.card-body__badge
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 5px 10px;
+
+    background-color: gray !important;
+    /* #41464C - тёмно-серый */
+}
+
+@media (max-width: 300px)
+{
+    .card-body__badge
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        padding: 5px 10px;
+
+        background-color: gray !important;
+    }
+}
+
+/* ГЛАВНАЯ: Клиенты */
+
+.clients__list
+{
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+}
+
+.clients__title
+{
+    position: relative;
+}
+
+.clients__item a
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.clients__item p
+{
+    font-weight: 500;
+
+    color: #000;
+}
+
+
+/* ГЛАВНАЯ: Написать нам */
+
+.write-us-page
+{
+    margin-bottom: -10%;
+}
+
+.write-us-wrap
+{
+    height: 100vh;
+    margin-top: -5%;
+
+    /*background-color: #203341;*/
+    /* background-image: url('../img/backgrounds/robo-back.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;*/
+}
+
+.write-us .row
+{
+    padding-top: 15px;
+}
+
+.write-us__title
+{
+    position: relative;
+}
+
+/* ГЛАВНАЯ: Соц. кнопки */
+
+.btn-fb
+{
+    background-color: #3b5998;
+}
+
+.btn-ins
+{
+    background-color: #2e5e86;
+}
+
+.btn-vk
+{
+    background-color: #4c75a3;
+}
+
+.btn-yt
+{
+    background-color: #ed302f;
+}
+
+.btn-email
+{
+    background-color: #4b515d;
+}
+
+
+/* МАСТЕРСКАЯ */
+
+/* МАСТЕРСКАЯ: Технологии/Программы */
+
+.list-group-item
+{
+    padding-top: .5rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+/* МАСТЕРСКАЯ: Карусель */
+
+.carousel-inner .carousel-item
+{
+    cursor: pointer;
+}
+
+.carousel-indicators li
+{
+    /*background-color: #5a95f5; голубой */
+    background-color: #f6786e;
+}
+
+.carousel-indicators li.active
+{
+    background-color: #b1caf3;
+}
+
+.gllacy-row,
+.robert-row
+{
+    position: relative;
+}
+
+#gllacy-project,
+#robert-project,
+#avtoinform-ankor,
+#autophone-ankor
+{
+    position: absolute;
+    top: -120px;
+}
+
+.description .jumbotron,
+.work-order.jumbotron,
+.consult-block.jumbotron
+{
+    background-image: url('../img/backgrounds/tech-bg.png');
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+
+/* МАСТЕРСКАЯ: Шапка аккордеона */
+
+.offers__text
+{
+    font-weight: 400;
+}
+
+.btn.offers__btn
+{
+    font-size: 1rem;
+}
+
+/* МАСТЕРСКАЯ: Заказы */
+
+.orders-list
+{
+    list-style: none;
+}
+
+.orders-list li
+{
+    margin-bottom: 1rem;
+}
+
+.orders__header
+{
+    font-weight: 400;
+}
+
+.phone.red-text,
+.email.red-text
+{
+    font-weight: 600;
+}
+
+.completed-projects
+{
+    position: relative;
+}
+
+
+/* МАСТЕРСКАЯ: Программы и оборудование */
+
+.technologies__list
+{
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.technologies__item a
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.technologies__item p
+{
+    font-weight: 500;
+
+    color: #000;
+}
+
+
+/* ФУТЕР */
+
+.footer.page-footer .link-up
+{
+    color: red;
+}
+
+.page-footer .link-up
+{
+    color: red;
+}
+
+footer
+{
+    bottom: 0;
+
+    width: 100%;
+    /*height: 60px;*/
+
+    background-color: #f0f0e9;
+}
+
+footer.page-footer .footer-copyright
+{
+    border-top: 1px solid gray;
+}
+
+/* НАПИСАТЬ НАМ */
+
+.completed-projects
+{
+    position: relative;
+}
+
+/* Тестовый градиент */
+.accordion-gradient-bcg
+{
+    background: linear-gradient(45deg, rgba(234, 21, 129, .6), rgba(10, 23, 187, .6) 100%);
+}
+
+/*@media (min-width: 500px) {
+  .hardware-page .heading__text {
+    font-family: 'Ubuntu Condensed', sans-serif !important;
+  }
+}*/
+
+.b-small-prod .view
+{
+    position: relative;
+    z-index: 1;
+}
+
+.b-small-prod .card-body
+{
+    z-index: 100;
+
+    margin: -20px 20px 0 20px;
+}
+
+.b-small-prod .card
+{
+    box-shadow: none;
+}
+
+.container.write-us
+{
+    margin-top: -6%;
+}
+
+/* Список технологий */
+
+.b-techns .card
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 150px;
+    height: 150px;
+    /*margin: 0 10px 20px;*/
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card .card-title
+{
+    font-weight: 400;
+
+    margin-bottom: 0;
+}
+
+.b-techns__img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.mask
+{
+    cursor: pointer;
+}
+
+.b-techns .row
+{
+    margin-right: 0;
+    margin-left: 0;
+
+    justify-content: center;
+}
+
+.b-techns .col
+{
+    max-width: none;
+
+    flex-grow: 0;
+}
+
+/* Анимации карточек готовых проектов: главная */
+
+.cards__card--1
+{
+    animation-delay: .4s;
+}
+
+.cards__card--2
+{
+    animation-delay: .8s;
+}
+
+.cards__card--3
+{
+    animation-delay: .8s;
+}
+
+.cards__card--4
+{
+    animation-delay: 1.2s;
+}
+
+.cards__card--5
+{
+    animation-delay: 1.6s;
+}
+
+/* Карточки в блоке Почему именно мы */
+
+.our-features .card-body .card-text
+{
+    font-size: 1rem;
+
+    color: #000;
+}
+
+.our-features .card-body .card-title
+{
+    color: #d32f2f;
+}
+
+/* #d32f2f */
+
+/* Страница Железо */
+
+.b-orders
+{
+    position: relative;
+}
+
+.collapsed i
+{
+    transform: rotate(-90deg);
+}
+
+/* Автоинформатор */
+.b-autoinformer,
+.b-autophone
+{
+    position: relative;
+}
